@@ -44,6 +44,13 @@ class Passenger{
       }.bind(this)
     );
   };
+
+  drivers(){
+    const trips = this.trips();
+    return trips.map(function(trip){
+      return trip.drivers();
+    });
+  };
 }
 
 let tripId = 0;
