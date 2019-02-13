@@ -18,7 +18,10 @@ class Driver{
   };
 
   passengers(){
-    return trips().map(function(trip){
+
+    const trips = this.trips();
+
+    return trips.map(function(trip){
       return trip.passenger();
     });
   };
