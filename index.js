@@ -16,6 +16,13 @@ class Driver{
       }.bind(this)
     );
   };
+
+  passengers(){
+    trips().map(function(trip){
+      return passenger
+    });
+  };
+
 }
 
 let passengerId = 0;
